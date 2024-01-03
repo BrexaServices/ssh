@@ -32,9 +32,8 @@ jobs:
       uses: worketeam/ssh@v1
       with:
         host: ${{ secrets.HOST }}
-        username: ${{ secrets.USER }}
+        user: ${{ secrets.USER }}
         key: ${{ secrets.KEY }}
-        port: ${{ secrets.PORT }}
         commands: |
             whoami
             ls -l
