@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using key
-      uses: worketeam/ssh
+      uses: worketeam/ssh@v1
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
